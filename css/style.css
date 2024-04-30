@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    background-image: linear-gradient(140deg, rgba(255,196,0,1) 0%, rgba(255,72,20,1) 58%, rgba(133,63,255,1) 100%);
+    background-size: cover;
+    width: 1728px;
+    height: 1080px;
+}
+
+img {
+    position: absolute;
+    top:300px;
+    width: 200px;
+    left: 720px;
+    animation: ghost 5s infinite;
+    animation-direction: reverse;
+}
+
+/* Animations */
+
+@keyframes ghost {
+    100% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(40px);
+      }
+      0% {
+        transform: translateY(-10px);
+      }
+}
